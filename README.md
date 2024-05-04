@@ -1,0 +1,4 @@
+SpringBootを一通り勉強した後に作ったWebアプリケーションです。
+Java(SpringBoot)、HTML、CSS、JavaScriptを用いて作成しています。
+実行には、JavaSE17のJDKとMariaDBが必要です。
+個人情報やAPIキーなどが記述された部分はサンプルデータに置き換えているので、そのままでは動作しない機能があります。
