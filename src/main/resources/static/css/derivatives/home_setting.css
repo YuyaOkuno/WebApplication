@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+.profile {
+	width: 500px;
+	height: auto;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.list-box {
+	padding: 20px;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+p {
+	margin: 0px;
+}
+
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+table th {
+	background-color: #262626;
+	color: white;
+	border: 1px solid black;
+	padding: 8px;
+	text-align: left;
+}
+
+table td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: left;
+}
+
+.cell-adjust table td:first-child,
+.cell-adjust table td:nth-child(2) {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.skills-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.skills-table th,
+.skills-table td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: left;
+	white-space: normal;
+}
+
+.skills-table th {
+	background-color: #262626;
+	color: white;
+}
+
+.skills-table th,
+.skills-table td {
+	width: 50%;
+}
+
+@media screen and (min-width: 769px) {
+	.top-margin {
+		margin-top: 0;
+	}
+	.profile {
+		margin-right: 10px;
+	}
+}
+
+/* タブレット・モバイル向けのスタイル */
+@media only screen and (max-width: 768px) {
+	.profile {
+		width: 100%;
+	}
+	.flex-container {
+		display: block;
+	}
+}

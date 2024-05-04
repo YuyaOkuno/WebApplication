@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+h2 {
+	margin: 0;
+}
+
+.inquiry-table {
+	width: 100%;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.inquiry-item,
+.inquiry-body {
+	padding: 20px;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.inquiry-item {
+	text-align: left;
+	width: 30%;
+	background-color: #262626;
+	color: #ffffff;
+}
+
+.inquiry-body {
+	width: 70%;
+	background-color: #ffffff;
+}
+
+.inquiry-item.required::after {
+	content: "必須";
+	color: white;
+	background-color: red;
+	padding: 2px 5px;
+	border-radius: 3px;
+	float: right;
+}
+
+.form-text {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(0, 0, 0);
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	max-width: 400px;
+}
+
+.form-textarea {
+	width: 100%;
+	padding: 10px;
+	height: 200px;
+	border-radius: 5px;
+	border: 1px solid rgb(0, 0, 0);
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.inquiry-split-name {
+	display: flex;
+	align-items: center;
+}
+
+.split-name-label {
+	width: 30%;
+	padding: 20px;
+	background-color: #262626;
+	color: #ffffff;
+}
+
+.split-name-input {
+	width: 35%;
+	background-color: #ffffff;
+}
+
+.split-name-space {
+	width: 5%;
+}
+
+.phone-input {
+	width: calc(30% - 5px);
+	text-align: center;
+}
+
+.inquiry-body input[type="text"]+span {
+	padding: 0 5px;
+}
+
+.postal-code-input {
+	width: calc(30% - 5px);
+	text-align: center;
+}
+
+.inquiry-submit {
+	width: 250px;
+	background-color: #262626;
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	margin: 0 auto;
+	font-size: 16px;
+	padding: 15px;
+	border-radius: 100vh;
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+}
+
+.inquiry-reset {
+	float: right;
+	margin-left: 100%;
+	padding: 8px 16px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+/* タブレット・モバイル向けのスタイル */
+@media only screen and (max-width: 768px) {
+	.inquiry-table th {
+		width: auto;
+		white-space: nowrap;
+		text-align: center;
+		position: relative;
+	}
+	.inquiry-item.required::after {
+		content: "必須";
+		color: white;
+		background-color: red;
+		padding: 2px 5px;
+		border-radius: 3px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

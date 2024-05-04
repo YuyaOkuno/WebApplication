@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ホーム</title>
+	<link rel="shortcut icon" href="/images/icons/home.png" />
+	<link th:href="@{/css/bases/sanitize.css}" rel="stylesheet" type="text/css">
+	<link th:href="@{/css/bases/basic_settings.css}" rel="stylesheet" type="text/css">
+	<link th:href="@{/css/derivatives/home_setting.css}" rel="stylesheet" type="text/css">
+	<script th:src="@{/js/settings/basic_setting.js}" type="text/javascript"></script>
+</head>
+
+<body>
+	<header>
+		<div class="heading">
+			<br>
+			<h1>O's Coding Log</h1>
+			<br>
+		</div>
+		<div>
+			<ul>
+				<!-- ホームへ遷移 -->
+				<li>
+					<form method="post" action="/home">
+						<input type="submit" id="home" style="display: none;">
+						<a href="/home" onclick="document.getElementById('home').click(); return false;">
+							<img class="icon" th:src="@{/images/icons/home_white.png}" alt="ホームアイコン"><br>
+							ホーム
+						</a>
+					</form>
+				</li>
+				<!-- 作品集へ遷移 -->
+				<li>
+					<form method="post" action="/collections">
+						<input type="submit" id="collections" style="display: none;">
+						<a href="/collections" onclick="document.getElementById('collections').click(); return false;">
+							<img class="icon" th:src="@{/images/icons/file_white.png}" alt="鉛筆アイコン"><br>
+							作品集
+						</a>
+					</form>
+				</li>
+				<!-- 問い合わせへ遷移 -->
+				<li>
+					<form method="post" action="/inquiry">
+						<input type="submit" id="inquiry" style="display: none;">
+						<a href="/inquiry" onclick="document.getElementById('inquiry').click(); return false;">
+							<img class="icon" th:src="@{/images/icons/mail_white.png}" alt="メールアイコン"><br>
+							問い合わせ
+						</a>
+					</form>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<h1 class="headword">ホーム</h1>
+		<div class="flex-container">
+			<div>
+				<img class="profile" th:src="@{/images/pictures/profile.jpg}" alt="プロフィール写真">
+			</div>
+			<div>
+				<h2 class="top-margin">プロフィール</h2>
+				<p><strong>名前</strong></p>
+				<p>サンプルテキスト</p><br>
+				<p><strong>生年月日</strong></p>
+				<p>サンプルテキスト</p><br>
+				<p><strong>所在地</strong></p>
+				<p>サンプルテキスト</p><br>
+				<p><strong>趣味</strong></p>
+				<p>サンプルテキスト</p><br>
+				<p><strong>興味関心</strong></p>
+				<p>サンプルテキスト</p><br>
+				<p><strong>目標</strong></p>
+				<p>サンプルテキスト</p><br>
+			</div>
+		</div>
+		<hr>
+		<div class="cell-adjust">
+			<h2>学歴</h2>
+			<table>
+				<tr>
+					<th>年</th>
+					<th>月</th>
+					<th>学歴</th>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<div class="cell-adjust">
+			<h2>職歴・訓練歴</h2>
+			<table>
+				<tr>
+					<th>年</th>
+					<th>月</th>
+					<th>職歴</th>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<div class="cell-adjust">
+			<h2>免許・資格</h2>
+			<table>
+				<tr>
+					<th>年</th>
+					<th>月</th>
+					<th>免許・資格</th>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+		<div>
+			<h2>保有しているスキル</h2>
+			<table class="skills-table">
+				<tr>
+					<th>スキル</th>
+					<th>詳細</th>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+				<tr>
+					<td>サンプルテキスト</td>
+					<td>サンプルテキスト</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+	<footer>
+		<div>
+			<input class="back_button" type="submit" value="ページトップに戻る" />
+		</div>
+	</footer>
+</body>
+
+</html>

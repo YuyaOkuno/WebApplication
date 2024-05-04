@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>認証ページ</title>
+	<link rel="shortcut icon" href="/images/icons/key.png" />
+	<link th:href="@{/css/bases/sanitize.css}" rel="stylesheet" type="text/css">
+	<link th:href="@{/css/bases/basic_settings.css}" rel="stylesheet" type="text/css">
+	<link th:href="@{/css/derivatives/certificateion_setting.css}" rel="stylesheet" type="text/css">
+	<script th:src="@{/js/settings/certificateion_setting.js}" type="text/javascript"></script>
+</head>
+
+<body>
+	<header>
+		<div class="heading">
+			<br>
+			<h1>O's Coding Log</h1>
+			<br>
+		</div>
+	</header>
+	<main>
+		<div>
+			<form class="inputform" method="post" action="/Verification">
+				<fieldset>
+					<legend>認証コード入力</legend>
+					<div class="input-container">
+						<input type="password" id="password" name="password" placeholder="認証コードを入力してください">
+						<img id="eye-icon" src="/images/icons/eye_icon.png">
+					</div>
+					<div>
+						<p class="message" style="display: none;" th:text="${msg}"></p>
+						<button type="submit" disabled>送信</button>
+					</div>
+				</fieldset>
+				<p class="disclaimer">
+					<b>※注意</b><br>
+					このサイトのwebサーバーは製作者によって運営されています。<br>
+					閲覧する際は、セキュリティ対策を十分に行なってください。<br>
+					このサーバーへのアクセスにより発生した損害について、一切の責任を負いかねます。
+				</p>
+				<div>
+					<label for="agree"><strong>了承しました</strong></label>
+					<input type="checkbox" id="agree" name="agree" required>
+				</div>
+			</form>
+		</div>
+	</main>
+</body>
+
+</html>
